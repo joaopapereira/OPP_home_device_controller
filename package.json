@@ -1,0 +1,12 @@
+{
+  "name": "OPP_home_device_controller",
+  "version": "1.0.0",
+  "description": "Home Device Controller Application",
+  "main": "index.js",
+  "repository": "git@github.com:AgileVentures/OPP_home_device_controller.git",
+  "author": "AgileVentures",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
+}
