@@ -10,7 +10,7 @@
     "express": "^4.15.5"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node bin/server.js",
     "lint": "eslint src/*"
   },
   "devDependencies": {
