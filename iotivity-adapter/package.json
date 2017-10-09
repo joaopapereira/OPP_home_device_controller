@@ -4,5 +4,8 @@
   "description": "Adapter to abstract connection to IoTivity framework",
   "main": "index.js",
   "author": "Agile Ventures",
-  "license": "Apache-2"
+  "license": "Apache-2",
+  "scripts": {
+    "link-packages": "yarn link"
+  }
 }
