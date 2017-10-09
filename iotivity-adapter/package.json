@@ -1,0 +1,8 @@
+{
+  "name": "iotivity-adapter",
+  "version": "1.0.0",
+  "description": "Adapter to abstract connection to IoTivity framework",
+  "main": "index.js",
+  "author": "Agile Ventures",
+  "license": "Apache-2"
+}

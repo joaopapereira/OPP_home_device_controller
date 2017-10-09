@@ -1,20 +1,16 @@
 {
-  "name": "OPP_home_device_controller",
+  "name": "@opp/home_device_controller",
   "version": "1.0.0",
-  "description": "Home Device Controller Application",
-  "main": "index.js",
+  "description": "All needed packages to start the home device controller",
   "repository": "git@github.com:AgileVentures/OPP_home_device_controller.git",
-  "author": "AgileVentures",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "express": "^4.15.5"
-  },
+  "author": "Agile Ventures",
+  "license": "Apache-2",
   "scripts": {
-    "start": "node bin/server.js",
-    "lint": "eslint src/*"
+     "start": "cd rest-api && yarn start"
   },
-  "devDependencies": {
-    "eslint": "^4.7.2",
-    "jasmine": "^2.8.0"
-  }
+  "private": true,
+  "workspaces": [
+     "rest-api",
+     "iotivity-adapter/*"
+  ]
 }
