@@ -6,7 +6,9 @@
   "author": "Agile Ventures",
   "license": "Apache-2",
   "scripts": {
-     "start": "cd rest-api && yarn start"
+     "start": "cd rest-api && yarn start",
+     
+    "link-packages": "cd iotivity-adapter && yarn link-packages && cd ../rest-api && yarn link-packages"
   },
   "private": true,
   "workspaces": [
