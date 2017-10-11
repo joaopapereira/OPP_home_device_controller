@@ -1,18 +1,27 @@
 {
-  "name": "@opp/home_device_controller",
-  "version": "1.0.0",
-  "description": "All needed packages to start the home device controller",
-  "repository": "git@github.com:AgileVentures/OPP_home_device_controller.git",
-  "author": "Agile Ventures",
-  "license": "Apache-2",
-  "scripts": {
-     "start": "cd rest-api && yarn start",
-     
-    "link-packages": "cd iotivity-adapter && yarn link-packages && cd ../rest-api && yarn link-packages"
-  },
-  "private": true,
-  "workspaces": [
-     "rest-api",
-     "iotivity-adapter/*"
-  ]
+   "name": "@opp/home_device_controller",
+   "version": "1.0.0",
+   "description": "All needed packages to start the home device controller",
+   "repository": "git@github.com:AgileVentures/OPP_home_device_controller.git",
+   "author": "Agile Ventures",
+   "license": "Apache-2.0",
+   "scripts": {
+      "start": "cd dist && yarn start",
+      "link-packages": "cd iotivity-adapter && yarn link-packages && cd ../domain && yarn link-packages && cd ../rest-api && yarn link-packages",
+      "lint": "cd domain && yarn lint && cd ../rest-api && yarn lint",
+      "test": "cd domain && yarn test",
+      "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log,./*/node_modules,./*/package.json,./**/*.spec.js --copy-files"
+   },
+   "private": true,
+   "workspaces": [
+      "rest-api",
+      "iotivity-adapter/*",
+      "domain"
+   ],
+   "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.6.0",
+      "rimraf": "^2.6.2"
+   }
 }

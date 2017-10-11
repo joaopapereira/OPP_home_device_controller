@@ -11,12 +11,17 @@
     "iotivity-adapter": "file:../iotivity-adapter"
   },
   "scripts": {
-    "start": "node bin/server.js",
+    "start": "yarn build && node bin/server.js",
     "lint": "eslint src/*",
-    "link-packages": "yarn link iotivity-adapter"
+    "link-packages": "yarn link iotivity-adapter opp_gateway_domain",
+    "test": "mocha --color --require babel-core/register src/controllers/*.spec.js",
+    "watch:test": "yarn test -w",
+    "build": "babel src --out-dir dist --source-maps inline"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
     "eslint": "^4.7.2",
-    "jasmine": "^2.8.0"
+    "mocha": "^4.0.1"
   }
 }
