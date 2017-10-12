@@ -1,0 +1,28 @@
+{
+  "name": "OPP_home_device_controller",
+  "version": "1.0.0",
+  "description": "Home Device Controller Application",
+  "main": "index.js",
+  "repository": "git@github.com:AgileVentures/OPP_home_device_controller.git",
+  "author": "AgileVentures",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.15.5",
+    "iotivity-adapter": "file:../iotivity-adapter",
+    "opp_gateway_domain": "file:../domain"
+  },
+  "scripts": {
+    "start": "node bin/server.js",
+    "lint": "eslint src/*/*.js src/*.js",
+    "link-packages": "yarn link iotivity-adapter && yarn link opp_gateway_domain",
+    "test": "mocha --colors src/controllers/*.spec.js",
+    "watch:test": "yarn test -w",
+    "build": "babel src --out-dir dist --source-maps inline"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.7.2",
+    "mocha": "^4.0.1"
+  }
+}
