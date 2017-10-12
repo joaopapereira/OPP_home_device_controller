@@ -1,10 +1,10 @@
-import {retrieveGridUseCase} from 'opp_gateway_domain';
-console.log(retrieveGridUseCase);
-let controller = (app) => {
+const {retrieveGridUseCase} = require('opp_gateway_domain');
+
+const controller = (app) => {
   app.get('/grid', (request, response) => {
-    let myGrid = retrieveGridUseCase();
+    const myGrid = retrieveGridUseCase();
     response.send(myGrid);
   });
 };
 
-export default controller;
+exports.gridController = controller;

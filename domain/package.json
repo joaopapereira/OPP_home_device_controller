@@ -8,8 +8,8 @@
   "license": "Apache-2.0",
   "dependencies": {},
   "scripts": {
-    "lint": "eslint src/*",
-    "test": "mocha --color --require babel-core/register grid/*.spec.js use_cases/*.spec.js",
+    "lint": "eslint grid/*.js use_cases/*.js shared/*.js *.js",
+    "test": "mocha --colors use_cases/*.spec.js grid/*.spec.js",
     "watch:test": "yarn test -w",
     "link-packages": "yarn link"
   },

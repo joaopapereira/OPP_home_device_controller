@@ -1,3 +1,4 @@
-import {Grid} from './grid/grid';
-import retrieveGridUseCase from './use_cases/retrieve-grid';
-export {Grid, retrieveGridUseCase};
+const {Grid} = require('./grid/grid');
+const retrieveGridUseCase = require('./use_cases/retrieve-grid');
+
+module.exports = {Grid, retrieveGridUseCase};

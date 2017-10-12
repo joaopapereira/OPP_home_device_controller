@@ -4,4 +4,4 @@ class Grid {
   }
 }
 
-export {Grid};
+exports.Grid = Grid;

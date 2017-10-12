@@ -1,6 +1,5 @@
-import {GridRepository} from './grid-repository';
-import testCommon from '../shared/tests-common';
-const expect = testCommon.expect;
+const {GridRepository} = require('./grid-repository');
+const {expect} = require('../shared/common.test');
 
 function buildGrid(overrides) {
   const defaults = {

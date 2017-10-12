@@ -8,4 +8,4 @@ process.env.PORT = 8765;
 
 let server = require('../../bin/server');
 
-export {should, chai, server};
+module.exports = {should, chai, server};

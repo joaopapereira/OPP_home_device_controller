@@ -1896,6 +1896,9 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+"opp_gateway_domain@file:domain":
+  version "1.0.0"
+
 optionator@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.8.2.tgz#364c5e409d3f4d6301d6c0b4c05bba50180aeb64"

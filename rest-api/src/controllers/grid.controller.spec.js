@@ -1,6 +1,10 @@
-import {chai, server} from '../shared/tests-common';
+const {chai, server} = require('../shared/tests-common');
 
 describe('GridController', function() {
+  after(() => {
+    server.close();
+  });
+  
   describe('GET /grid', function() {
     describe('when grid exists', function() {
       it('return the grid information', (done) => {
@@ -12,7 +16,7 @@ describe('GridController', function() {
             res.body.should.be.eql({
               name: 'my grid'
             });
-
+            
             done();
           });
       });

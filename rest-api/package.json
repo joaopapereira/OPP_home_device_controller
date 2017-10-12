@@ -8,13 +8,14 @@
   "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.15.5",
-    "iotivity-adapter": "file:../iotivity-adapter"
+    "iotivity-adapter": "file:../iotivity-adapter",
+    "opp_gateway_domain": "file:../domain"
   },
   "scripts": {
-    "start": "yarn build && node bin/server.js",
-    "lint": "eslint src/*",
-    "link-packages": "yarn link iotivity-adapter opp_gateway_domain",
-    "test": "mocha --color --require babel-core/register src/controllers/*.spec.js",
+    "start": "node bin/server.js",
+    "lint": "eslint src/*/*.js src/*.js",
+    "link-packages": "yarn link iotivity-adapter && yarn link opp_gateway_domain",
+    "test": "mocha --colors src/controllers/*.spec.js",
     "watch:test": "yarn test -w",
     "build": "babel src --out-dir dist --source-maps inline"
   },

@@ -1,8 +1,8 @@
-import {Grid} from './grid';
+const {Grid} = require('./grid');
 class GridRepository {
   getGrid() {
     return new Grid('my grid');
   }
 }
 
-export {GridRepository};
+exports.GridRepository = GridRepository;

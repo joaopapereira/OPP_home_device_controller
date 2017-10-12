@@ -1,6 +1,5 @@
-import retrieveGrid from './retrieve-grid';
-import testCommon from '../shared/tests-common';
-const expect = testCommon.expect;
+const retrieveGrid = require('./retrieve-grid');
+const {expect} = require('../shared/common.test');
 
 function buildGrid(overrides) {
   const defaults = {
