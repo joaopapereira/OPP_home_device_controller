@@ -22,3 +22,17 @@ Run the command to install dependencies
 ```bash
 yarn install
 ```
+
+## Start application
+
+To run the application run the command
+```bash
+yarn start
+```
+
+## Run the tests
+
+To run the tests
+```bash
+yarn test
+```
