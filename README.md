@@ -1,5 +1,5 @@
-# OPP_home_device_controller
-This repository contains the OPP Project code to controller the Home Gateway
+# OPP_gateway
+This repository contains the OPP Project code to control the Home Gateway
 
 ## Requirements
 1. yarn 1.0 +
