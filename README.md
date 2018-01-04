@@ -1,6 +1,5 @@
-# OOP_home_device_controller
-This repository contains the OOP Project code to controller the Home Gateway
-
+# OPP_gateway
+This repository contains the OPP Project code to control the Home Gateway
 ## Requirements
 1. yarn 1.0 +
 1. node 7+
@@ -21,4 +20,15 @@ Everytime we add a new module we need to run this command as well
 Run the command to install dependencies
 ```bash
 yarn install
+```
+## Start application
+To run the application run the command
+```bash
+yarn start
+```
+
+## Run the tests
+To run the tests
+```bash
+yarn test
 ```
